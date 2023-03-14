@@ -1,4 +1,14 @@
 <template>
+    <section class="firstTop">
+        <img src="@/assets/gaming.jpg" />
+        <div class="topInfo">
+            <h3>Games4Gamers</h3>
+            <p>This comprehensive game info database! .It
+                database is the ultimate resource for gamers of all levels, 
+                providing detailed information on everything from you need to 
+                know about your favorite game. our database has you covered. </p>
+        </div>
+    </section>
     <div class="headerImage">
         <img :src="game.thumbnail" :alt="game.title" />
         <div class="mainInfo">
@@ -105,6 +115,34 @@ export default {
     color: #000;
     background-color: #ffffff;
     border-radius: 10px;
+}
+.firstTop {
+    position: relative;
+    margin: 10px 20px;
+    height: 60vh;
+}
+.firstTop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.topInfo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+}
+.topInfo p {
+    max-width: 700px;
 }
 
 </style>

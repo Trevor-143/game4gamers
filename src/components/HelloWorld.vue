@@ -88,9 +88,11 @@ section h2 {
   margin: 5px;
   position: relative;
   border-radius: 10px;
+  width: 280px;
 }
 .allHomeGamesLi img {
   border-radius: 10px;
+  width: 280px;
 }
 .allHomeGamesLi .someInfo {
   position: absolute;
@@ -98,11 +100,16 @@ section h2 {
   left: 0;
   top: 0;
   text-align: left;
-  padding: 20px 10px;
+  padding:5px;
   width: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) );
   color: #cecece;
   font-size: 12px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.allHomeGamesLi:hover .someInfo {
+  opacity: 1;
 }
 .title {
   font-size: 20px;
