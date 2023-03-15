@@ -118,7 +118,7 @@ export default {
 }
 .firstTop {
     position: relative;
-    margin: 10px 20px;
+    margin: 10px 30px;
     height: 60vh;
 }
 .firstTop img {
@@ -140,6 +140,10 @@ export default {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 20px;
+}
+.topInfo h3 {
+    font-size: 25px;
+    color: #ff0000;
 }
 .topInfo p {
     max-width: 700px;

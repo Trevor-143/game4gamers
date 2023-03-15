@@ -1,5 +1,5 @@
 <template>
-    <h1>PC Games</h1>
+    <!-- <h1>PC Games</h1> -->
     <ForPc />
 </template>
 

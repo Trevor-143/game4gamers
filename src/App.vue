@@ -9,16 +9,19 @@
       <router-link to="/GiveAways">Give Aways</router-link>
     </nav>
   </div>
+  <ScrollTop />
   <router-view/>
   <Footer />
 </template>
 
 <script>
 import Footer from '@/components/MainFooter'
+import ScrollTop from '@/components/ScrollToTop'
 
 export default {
   components: {
-    Footer
+    Footer,
+    ScrollTop
   }
 }
 

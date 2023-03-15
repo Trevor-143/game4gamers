@@ -1,4 +1,15 @@
 <template>
+    <section class="firstTop">
+        <img src="@/assets/pcwallpaper.jpg" />
+        <div class="topInfo">
+            <h3>All Pc Games</h3>
+            <p>Looking for a one-stop-shop for all your PC gaming information needs? 
+                Look no further than our PC game info database! This database offers a 
+                wealth of information on all the latest and greatest PC games, including 
+                detailed descriptions of the game, creation and launch date, 
+                and expert tips and tricks to help you navigate even the most challenging games. </p>
+        </div>
+    </section>
     <section class="allTheGames">
         <h2>All Pc Games</h2>
         <ul class="gameList">
@@ -44,7 +55,8 @@ export default {
 
 <style>
     .allTheGames h2 {
-        padding: 5px 15px;
+        width: fit-content;
+        margin-left: 40px;
     }
     .gameList {
         display: flex;
