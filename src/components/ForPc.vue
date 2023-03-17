@@ -54,11 +54,15 @@ export default {
 </script>
 
 <style>
+    .allTheGames {
+        padding: 0 10px;
+    }
     .allTheGames h2 {
         width: fit-content;
         margin-left: 40px;
     }
-    .gameList {
+
+    /* .gameList {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -73,11 +77,24 @@ export default {
         border-radius: 10px;
         list-style: none;
         position: relative;
+    } */
+    
+    .gameList {
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    .gameListLi {
+        aspect-ratio: 1/.5;
+        position: relative;
+        list-style: none;
     }
     .gameListLi img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 5px;
+        aspect-ratio: 1/.5;
+        object-fit: cover;
     }
     .gameListInfo {
         position: absolute;
