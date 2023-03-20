@@ -55,11 +55,11 @@ export default {
 
 <style>
     .allTheGames {
-        padding: 0 10px;
+        padding: 0 5px;
     }
     .allTheGames h2 {
         width: fit-content;
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     /* .gameList {

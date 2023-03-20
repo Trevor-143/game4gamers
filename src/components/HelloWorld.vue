@@ -81,7 +81,7 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 13px;
+  padding: 10px;
 }
 .allHomeGamesLi {
   list-style: none;

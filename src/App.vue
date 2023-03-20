@@ -42,16 +42,21 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  max-width: 1400px;
+  width: 100%;
 }
 body {
   color: #ffffff;
   background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px 10px;
+  margin: 5px;
 }
 .top .homeLink {
   padding: 10px 15px;

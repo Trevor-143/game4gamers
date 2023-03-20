@@ -84,7 +84,7 @@ export default {
     width: 350px;
     height: 200px;
     object-fit: cover;
-    margin: auto 10px;
+    margin: auto 0px;
 }
 .mainInfo {
     text-align: left;
@@ -118,14 +118,14 @@ export default {
 }
 .firstTop {
     position: relative;
-    margin: 10px 30px;
+    margin: 10px;
     height: 60vh;
 }
 .firstTop img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .topInfo {
     position: absolute;
