@@ -104,7 +104,7 @@ export default {
         grid-row: span 2;
         grid-column: span 2;
     }
-    .newsItem:nth-child(1), .newsItem:nth-child(11), .newsItem:nth-child(35), .newsItem:nth-child(20) img {
+    .newsItem:nth-child(1) img, .newsItem:nth-child(11) img, .newsItem:nth-child(35) img, .newsItem:nth-child(20) img {
         aspect-ratio: 1/1.25;
     }
 }

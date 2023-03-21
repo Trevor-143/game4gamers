@@ -119,7 +119,7 @@ export default {
 .firstTop {
     position: relative;
     margin: 10px;
-    height: 60vh;
+    height: 300px;
 }
 .firstTop img {
     width: 100%;
