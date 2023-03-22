@@ -1,7 +1,4 @@
 <template>
-  <div v-if="isLoading" class="wait">
-    <Loading />
-  </div>
   <MainGame />
   <HelloWorld />
   <Anime />
@@ -30,7 +27,6 @@ import Fiction from '@/components/forHome/Sci_fi.vue'
 import Sports from '@/components/forHome/Sports.vue'
 import Racing from '@/components/forHome/Racing.vue'
 import Anime from '@/components/forHome/Anime.vue'
-import Loading from '@/components/loading.vue'
 
 export default {
   name: 'HomeView',
@@ -46,35 +42,11 @@ export default {
     Fiction,
     Sports,
     Racing,
-    Anime,
-    Loading
-  },
-  data() {
-    return {
-      isLoading: true
-    }
-  },
-  methods: {
-    onMounted() {
-      setTimeout(() => {
-        this.isLoading = false
-      }, 3000);
-    },
-  },
+    Anime
+  }
 }
 </script>
 
 <style>
-.wait {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99;
-}
+
 </style>

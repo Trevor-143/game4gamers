@@ -59,25 +59,7 @@ export default {
     }
     .allTheGames h2 {
         width: fit-content;
-        /* margin-left: 40px; */
     }
-
-    /* .gameList {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        
-    }
-    .gameListLi {
-        min-width: 200px;
-        max-width: 250px;
-        width: 100%;
-        margin: 5px;
-        border-radius: 10px;
-        list-style: none;
-        position: relative;
-    } */
     
     .gameList {
         display: grid;
