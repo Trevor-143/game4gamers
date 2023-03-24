@@ -71,6 +71,10 @@ export default {
         position: relative;
         list-style: none;
     }
+    .gameListLi a {
+        text-decoration: none;
+        color: #fff;
+    }
     .gameListLi img {
         width: 100%;
         height: auto;

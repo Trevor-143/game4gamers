@@ -1,13 +1,26 @@
 <template>
   <div class="top">
     <router-link class="homeLink" to="/"> <img src="../public/game.png" /> Games4Gamers</router-link>
-    <nav>
+    <nav class="bigNav">
       <router-link to="/">Home</router-link>
       <router-link to="/PCGames">PC Games</router-link>
       <router-link to="/BrowserGames">Browser Games</router-link>
       <router-link to="/News">News</router-link>
       <router-link to="/GiveAways">Give Aways</router-link>
     </nav>
+    <div class="menu">
+      <fa icon="bars" class="pull" @click="isSMenu = !isSMenu" v-show="!isSMenu" />
+      <fa icon="xmark" class="pull" @click="isSMenu = !isSMenu" v-show="isSMenu" />
+    </div>
+    <nav class="smallNav" v-show="isSMenu">
+      <router-link to="/" class="subClose">Home</router-link>
+      <router-link to="/PCGames">PC Games</router-link>
+      <router-link to="/BrowserGames">Browser Games</router-link>
+      <router-link to="/News">News</router-link>
+      <router-link to="/GiveAways">Give Aways</router-link>
+      <span @click="isSMenu = !isSMenu">close</span>
+    </nav>
+    
   </div>
   <ScrollTop />
   <router-view/>
@@ -22,6 +35,11 @@ export default {
   components: {
     Footer,
     ScrollTop
+  },
+  data() {
+    return {
+      isSMenu: false
+    }
   }
 }
 
@@ -106,5 +124,60 @@ nav a.router-link-exact-active {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #c90000; 
+}
+.smallNav, .menu {
+  display: none;
+}
+
+@media(max-width: 800px) {
+  .bigNav {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .smallNav {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 2rem;
+    right: 0;
+    z-index: 10;
+    
+  }
+  .smallNav a {
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+  }
+  .smallNav span {
+    background: #fff;
+    color: #000;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px 5px 5px 15px;
+  }
+  .pull {
+    font-size: 30px;
+    padding-right: 1rem;
+    margin-left: 10px;
+    transition: 0.4s ease-in-out;
+  }
+  .pull:hover {
+    color: #ff0000;
+  }
+
 }
 </style>

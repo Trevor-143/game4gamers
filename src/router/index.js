@@ -4,6 +4,7 @@ import GiveAways from '../views/GiveAways.vue'
 import PCGames from '../views/PCGames.vue'
 import News from '../views/News.vue'
 import BrowserGames from '../views/BrowserGames.vue'
+import GameDetails from '../views/GameDetails.vue'
 
 const routes = [
   {
@@ -32,12 +33,9 @@ const routes = [
     component: News
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/game/:id',
+    name: 'GameDetails',
+    component: GameDetails
   }
 ]
 
