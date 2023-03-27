@@ -15,10 +15,12 @@
         <ul class="gameList">
             <li v-for="game in pcGameList" :key="game.id" class="gameListLi">
                 <img :src="game.thumbnail" :alt="game.title" />
-                <div class="gameListInfo">
-                    <h3 class="gameTitle">{{ game.title }}</h3>
-                    <h3>{{ game.developer }}</h3>
-                </div>
+                <router-link :to="'/game/'+game.id">
+                    <div class="gameListInfo">
+                        <h3 class="gameTitle">{{ game.title }}</h3>
+                        <h3>{{ game.developer }}</h3>
+                    </div>
+                </router-link>
             </li>
         </ul>
     </section>
