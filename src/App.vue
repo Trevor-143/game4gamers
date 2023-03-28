@@ -119,8 +119,9 @@ nav a.router-link-exact-active {
   background: rgba(235, 235, 235, 0); 
 }
 ::-webkit-scrollbar-thumb {
-  background: #6b0000; 
+  background: #6b0000;
   cursor: pointer;
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #c90000; 

@@ -9,13 +9,15 @@
       <ul class="allHomeGames sports">
         <li v-for="game in gameList" :key="game.id" class="allHomeGamesLi">
           <img :src="game.thumbnail" :alt="game.title" />
-          <div class="someInfo">
-            <h3 class="title">{{ game.title }}</h3>
-            <div class="line"></div>
-            <h3>{{ game.developer }}</h3>
-            <h3>{{ game.release_date }}</h3>
-            <h3>{{ game.platform }}</h3>
-          </div>
+          <router-link :to="'/game/'+game.id">
+            <div class="someInfo">
+              <h3 class="title">{{ game.title }}</h3>
+              <div class="line"></div>
+              <h3>{{ game.developer }}</h3>
+              <h3>{{ game.release_date }}</h3>
+              <h3>{{ game.platform }}</h3>
+            </div>
+          </router-link>
         </li>
       </ul>
     </section>

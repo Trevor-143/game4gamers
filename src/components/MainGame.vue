@@ -10,7 +10,9 @@
         </div>
     </section>
     <div class="headerImage">
-        <img :src="game.thumbnail" :alt="game.title" />
+        <router-link :to="'/game/'+game.id">
+            <img :src="game.thumbnail" :alt="game.title" />
+        </router-link>
         <div class="mainInfo">
             <div class="mainInfoText">
                 <h3>{{ game.title }}</h3>
