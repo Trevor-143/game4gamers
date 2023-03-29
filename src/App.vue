@@ -53,6 +53,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
+  /* outline: 1px solid red; */
 }
 
 #app {
@@ -106,21 +107,24 @@ nav a {
   margin: 5px 10px;
   transition: 0.4s all ease-in-out;
 }
-
+nav a:hover {
+  color: #ff0000;
+}
 nav a.router-link-exact-active {
   color: #ff0000;
 }
 
-
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: rgba(235, 235, 235, 0); 
 }
 ::-webkit-scrollbar-thumb {
   background: #6b0000;
   cursor: pointer;
+  border: 3px solid rgba(0, 0, 0, 0, 0);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {

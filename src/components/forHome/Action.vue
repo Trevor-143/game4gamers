@@ -47,7 +47,7 @@
         content.scrollLeft += 400;
       }
       onBeforeMount(() => {
-        fetch('https://mmo-games.p.rapidapi.com/games?category=action', options)
+        fetch('https://mmo-games.p.rapidapi.com/games?category=Action', options)
         .then(response => response.json())
         .then(data => {
           gameList.value = data
