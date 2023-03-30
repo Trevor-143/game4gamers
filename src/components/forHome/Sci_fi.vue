@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="showing">
       <h2>Science Fiction Games 
         <span>
           <fa class="fa" icon="circle-chevron-left" @click="scroll_left"/>

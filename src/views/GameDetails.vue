@@ -203,6 +203,9 @@ export default {
   background-color: #fff;
   color: #000;
   border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .description {
   margin-top: 2rem;
@@ -236,6 +239,7 @@ export default {
 }
 .requirements {
   text-align: left;
+  margin-top: 1rem;
 }
 .requirements h3 {
   padding-left: 1rem;

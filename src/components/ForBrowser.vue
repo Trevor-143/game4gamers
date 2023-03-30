@@ -3,11 +3,9 @@
         <img src="@/assets/browsergames.jpg" />
         <div class="topInfo">
             <h3>Browser Games</h3>
-            <p>Are you a fan of browser games, but tired of scouring the internet
-                 for information on your favorites? Look no further than our browser 
-                 game info database! Our database is the ultimate resource for all 
+            <p>Are you a fan of browser games, Our database is the ultimate resource for all 
                  things browser gaming, providing detailed information on gameplay 
-                 screenshots, characters, and much more. </p>
+                 screenshots, game genres, and much more. </p>
         </div>
     </section>
     <section class="allTheGames">

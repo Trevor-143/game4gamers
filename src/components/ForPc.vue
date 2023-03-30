@@ -3,11 +3,9 @@
         <img src="@/assets/pcwallpaper.jpg" />
         <div class="topInfo">
             <h3>All Pc Games</h3>
-            <p>Looking for a one-stop-shop for all your PC gaming information needs? 
-                Look no further than our PC game info database! This database offers a 
-                wealth of information on all the latest and greatest PC games, including 
-                detailed descriptions of the game, creation and launch date, 
-                and expert tips and tricks to help you navigate even the most challenging games. </p>
+            <p>The game4gamers database offers a 
+                wealth of information on all the greatest PC games, including 
+                detailed descriptions of the game, creation and launch date. </p>
         </div>
     </section>
     <section class="allTheGames">

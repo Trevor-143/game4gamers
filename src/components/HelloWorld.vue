@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="showing">
     <h2>Shooting Games 
       <span>
         <fa class="fa" icon="circle-chevron-left" @click="scroll_left"/>
@@ -64,6 +64,11 @@ export default {
 </script>
 
 <style>
+@media(max-width:500px) {
+  .showing h2 {
+    font-size: 15px;
+  }
+}
 h2 span .fa {
   margin: 0 10px;
   cursor: pointer;

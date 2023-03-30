@@ -3,9 +3,8 @@
         <img src="@/assets/gaming.jpg" />
         <div class="topInfo">
             <h3>Games4Gamers</h3>
-            <p>This comprehensive game info database! .It
-                database is the ultimate resource for gamers of all levels, 
-                providing detailed information on everything from you need to 
+            <p>A database for gamers of all levels, 
+                providing detailed information on the most you need to 
                 know about your favorite game. our database has you covered. </p>
         </div>
     </section>
@@ -81,10 +80,16 @@ export default {
     flex-direction: row;
     padding: 10px 15px;
 }
+@media(max-width: 800px) {
+    .headerImage {
+        flex-direction: column;
+    }
+}
 .headerImage img {
     border-radius: 10px;
-    width: 350px;
-    height: 200px;
+    max-width: 350px;
+    width: 100%;
+    /* height: 200px; */
     object-fit: cover;
     margin: auto 0px;
 }
@@ -109,7 +114,7 @@ export default {
 .textTags {
     display: flex;
     flex-direction: row;
-
+    overflow: auto;
 }
 .textTags h4 {
     padding: 7px 10px;
@@ -117,6 +122,13 @@ export default {
     color: #000;
     background-color: #ffffff;
     border-radius: 10px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textTags::-webkit-scrollbar {
+    display: none;
 }
 .firstTop {
     position: relative;
@@ -137,7 +149,7 @@ export default {
     right: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -146,9 +158,11 @@ export default {
 .topInfo h3 {
     font-size: 25px;
     color: #ff0000;
+    text-align: left;
 }
 .topInfo p {
     max-width: 700px;
+    text-align: left;
 }
 
 </style>

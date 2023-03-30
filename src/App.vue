@@ -12,7 +12,7 @@
       <fa icon="bars" class="pull" @click="isSMenu = !isSMenu" v-show="!isSMenu" />
       <fa icon="xmark" class="pull" @click="isSMenu = !isSMenu" v-show="isSMenu" />
     </div>
-    <nav class="smallNav" v-show="isSMenu">
+    <nav class="smallNav" v-show="isSMenu" @click="isSMenu = !isSMenu">
       <router-link to="/" class="subClose">Home</router-link>
       <router-link to="/PCGames">PC Games</router-link>
       <router-link to="/BrowserGames">Browser Games</router-link>
@@ -119,7 +119,7 @@ nav a.router-link-exact-active {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(235, 235, 235, 0); 
+  background: rgba(235, 235, 235, 0);
 }
 ::-webkit-scrollbar-thumb {
   background: #6b0000;
@@ -178,7 +178,6 @@ nav a.router-link-exact-active {
     font-size: 30px;
     padding-right: 1rem;
     margin-left: 10px;
-    transition: 0.4s ease-in-out;
   }
   .pull:hover {
     color: #ff0000;
